@@ -13,7 +13,7 @@ function Cart() {
     }, 0);
 
     return (
-        <Container style={{ padding: "80px 0 30px" }}>
+        <Container style={{ margin: "80px auto 30px" }}>
             <h1>Welcome To Your Cart</h1>
             <Button variant="danger" style={{ margin: "20px 0" }} onClick={() => {
                 dispatch(clear())

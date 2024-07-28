@@ -18,11 +18,11 @@ function Products() {
         dispatch(fetchProducts())
     }, [])
     return (
-        <Container style={{ padding: "80px 0 30px" }}>
+        <Container style={{ margin: "80px auto 30px" }}>
             <Row>
                 {products.map((product) => (
-                    <Col key={product.id} style={{ marginBottom: "20px" }}>
-                        <Card style={{ width: '16rem' }}>
+                    <Col key={product.id} style={{ marginBottom: "20px" }} sm={6} md={4} lg={3}>
+                        <Card>
                             <Card.Img variant="top" src={product.image} style={{ height: "300px" }} />
                             <Card.Body>
                                 <Card.Title>{product.title.slice(0, 18)}</Card.Title>
